@@ -1,9 +1,14 @@
 <head>
     <title>IEEE@UCR 2021</title>
     <style>
+        body {
+            background-color: lightsteelblue;
+            margin-bottom: 128px;
+            margin: 0px 0px 0px 0px;
+        }
         #logo {
-            font: 10px Inconsolata;
-            line-height: 10px;
+            font: 12px Inconsolata;
+            line-height: 12px;
             font-weight: 900;
             font-stretch: ultra-expanded;
             color: white;
@@ -12,16 +17,16 @@
             margin-left:24px;
         }
         #at {
-            font: 10px Inconsolata;
-            line-height: 10px;
+            font: 12px Inconsolata;
+            line-height: 12px;
             font-weight: 900;
             font-stretch: ultra-expanded;
             color: white;
             float: left;
         }
         #ucr {
-            font: 10px Inconsolata;
-            line-height: 10px;
+            font: 12px Inconsolata;
+            line-height: 12px;
             font-weight: 900;
             font-stretch: ultra-expanded;
             color: gold;
@@ -29,17 +34,34 @@
 
             margin-right:24px;
         }
-        #year {
-            font: 36px Inconsolata;
-        }
         #logoMargin {
+            width:100%;
             background-color:steelblue;
             float: left;
             margin: auto;
         }
+
+        .entry {
+            margin-top:24px;
+        }
+        .entry h1 {
+            margin-top:0px;
+            margin-left:64px;
+            width:256px;
+            float: left;
+            font: bold 24px Inconsolata;
+            color: black;
+        }
+        .entry p {
+            margin-top:0px;
+            margin-left: 320px;
+            width: 1024px;
+            font: 24px Inconsolata;
+            color: black;
+        }
     </style>
 </head>
-<body style="background-color:lightsteelblue">
+<body>
     <div>
         <div id="logoMargin">
             <pre id="logo">
@@ -104,76 +126,70 @@
 </pre>
         </div>
     </div>
-    <div style="clear:true;">
+    <div style="clear:both;">
 
-        <pre id="text"></pre>
     </div>
-    <script type="text/javascript">
-        var text = document.getElementById('text');
+    <div class="entry">
 
-        var items = [
-            {
-                title: "What is IEEE?",
-                desc:  "We are the Institute of Electrical and Electronics Engineers. We're a group dedicated to professionalism, connections, and our projects."
+        <h1>About IEEE</h1>
+        <p>IEEE (pronounced "I triple E") is the Institute of Electrical and Electronics Engineers. We are a group dedicated to professionalism, connections, and our projects.</p>
+    </div>
+    <div class="entry">
+        <h1>Our mission</h1>
+        <p>
+            Our mission as the local chapter is to provide engineers with technical, social, and professional development in the engineering field. We aim to be the leading engineering organization on campus, providing more opportunities for student improvement outside the classroom. We are committed in providing engineers with career enhancement, engineering social events, and growth in their respective professions.
+        </p>
+    </div>
+    <div class="entry">
+        <h1>
+            Join IEEE@UCR
+        </h1>
+        <p>
+            To become a student member, simply show up to any meetings, events, or projects that interest you!
+            <p>
+                - Join the <a href="https://forms.gle/r86qA7TsFFTBGJCC6">mailing list</a> to receive our weekly flyers.
+                <br />
+                - See the <a href="https://ieee.ucr.edu/home/calendar">Calendar</a> for our upcoming events.
+                <br />
+                - Check out the <a href="https://ieee.ucr.edu/home/projects">Projects</a> we have!
+                <br />
+                - Join the <a href="https://discord.gg/Ugjp6Us">Discord server</a> to chat!
+            </p>
+        </p>
+        <p>
+            If you have any suggestions, please email <a href="mailto:ieeeucr@gmail.com">ieeeucr@gmail.com</a>
+        </p>
+    </div>
+    <div class="entry">
+        <h1>Gaming</h1>
+        <p>
+            With the move to online activities, you can find us playing video games on Discord voice chat every now and then. We also have dedicated Minecraft servers courtesy of Dylan. See the #minecraft channel on our Discord for more information.
+        </p>
+        
+        <p>
+            - <a href="#pixelmon_banner" onclick="togglePixelmon()">&lt;Pixelmon server&gt;</a>
+        </p>
+        <p><img id="pixelmon_banner" hidden="true" width="1024px;" src="minecraft/pixelmon.png" /></p>
+        
+        <p>
+            - <a href="#ftb_banner" onclick="toggleFtb()">&lt;Feed the Beast: Revelations server&gt;</a>
+        </p>
+        <p><img id="ftb_banner" hidden="true" width="1024px;" src="minecraft/ftb.png" /></p>
+        
+        <p>
+            - <a href="#vanilla_banner" onclick="toggleVanilla()">&lt;Vanilla server&gt;</a>
+        </p>
+
+        <p><img id="vanilla_banner" hidden="true" width="1024px;" src="minecraft/vanilla.png" /></p>
+        <script type="text/javascript">
+            let pixelmon = document.getElementById('pixelmon_banner');
+            let ftb = document.getElementById('ftb_banner');
+            function togglePixelmon() {
+                pixelmon.hidden = !pixelmon.hidden;
             }
-        ]
-
-        var lines = [];
-        for (var index = 0; index < items.length; index++) {
-            let item = items[index];
-            //console.log(item.desc);
-            let line = item.title + ' '.repeat(20 - item.title.length);
-            let margin = ' '.repeat(20);
-            let i = 0;
-            let column = margin.length;
-            while (i < item.desc.length) {
-                let c = item.desc[i];
-                if (c == '\n') {
-                    lines.push(line);
-
-                    line = margin;
-                    column = margin.length;
-                } else {
-                    line += c;
-
-                    console.log(line);
-
-                    column++;
-                    if (column == 100) {
-                        if (c == ' ') {
-                            lines.push(line);
-
-                            line = margin;
-                            column = margin.length;
-                        } else {
-                            let back = 0;
-                            let nextLine = margin;
-                            while (line[i + back] != ' ') {
-                                back--;
-                            }
-                            nextLine += line.substring(column + back, column);
-                            line = line.substring(0, column + back);
-
-                            console.log('line: ' + line);
-                            console.log('next: ' + nextLine);
-
-                            lines.push(line);
-
-                            line = nextLine;
-                            column = nextLine.length;
-                        }
-                    }
-                }
-                i++;
-                
+            function toggleFtb() {
+                ftb.hidden = !ftb.hidden;
             }
-            lines.push(line);
-        }
-        for (var line in lines) {
-            console.log(lines[line]);
-        }
-
-        text.innerText = lines.join('\n');
-
-    </script>
+        </script>
+    </div>
 </body>
