@@ -2,39 +2,178 @@
     <title>IEEE@UCR 2021</title>
     <style>
         #logo {
-            font: bolder 12px Inconsolata;
+            font: 10px Inconsolata;
+            line-height: 10px;
+            font-weight: 900;
             font-stretch: ultra-expanded;
-            color: blue;
-            margin: 24px 24px 24px 24px;
-        }
-        #logoBox {
+            color: white;
             float: left;
-            border: 4px solid black;
+
+            margin-left:24px;
+        }
+        #at {
+            font: 10px Inconsolata;
+            line-height: 10px;
+            font-weight: 900;
+            font-stretch: ultra-expanded;
+            color: white;
+            float: left;
+        }
+        #ucr {
+            font: 10px Inconsolata;
+            line-height: 10px;
+            font-weight: 900;
+            font-stretch: ultra-expanded;
+            color: gold;
+            float: left;
+
+            margin-right:24px;
+        }
+        #year {
+            font: 36px Inconsolata;
+        }
+        #logoMargin {
+            background-color:steelblue;
+            float: left;
+            margin: auto;
         }
     </style>
 </head>
-<body>
-    <div id="logoBox">
-        <pre id="logo">
+<body style="background-color:lightsteelblue">
+    <div>
+        <div id="logoMargin">
+            <pre id="logo">
         /\           
-       /--\          +------------+    +------------+    +------------+    +------------+
-      //  \\         |            |    |            |    |            |    |            |
-     // /\ \\        |            |    |            |    |            |    |            |
-    // /  \ \\       +----+  +----+    |  +---------+    |  +---------+    |  +---------+
-   // /_  _\ \\           |  |         |  |              |  |              |  |
-  //    ||    \\          |  |         |  |              |  |              |  |
- //  _  || <-  \\         |  |         |  +---------+    |  +---------+    |  +---------+
-/|  //  ||  \\  |\        |  |         |            |    |            |    |            |
-\|  |\_ || _/|  |/        |  |         |            |    |            |    |            |
- \\  \_----_/  //         |  |         |  +---------+    |  +---------+    |  +---------+
-  \\   ----   //          |  |         |  |              |  |              |  |
-   \\   ||   //           |  |         |  |              |  |              |  |
-    \\  ||  // _     +----+  +----+    |  +---------+    |  +---------+    |  +---------+
-     \\ || // / \    |            |    |            |    |            |    |            |
-      \\  // | R |   |            |    |            |    |            |    |            |
-       \--/   \_/    +------------+    +------------+    +------------+    +------------+
+       /--\          +----------+  +----------+  +----------+  +----------+
+      //  \\         |          |  |          |  |          |  |          |
+     // /\ \\        |          |  |          |  |          |  |          |
+    // /  \ \\       +---+  +---+  |  +-------+  |  +-------+  |  +-------+
+   // /_  _\ \\          |  |      |  |          |  |          |  |
+  //    ||    \\         |  |      |  |          |  |          |  |
+ //  _  || <=  \\        |  |      |  +-------+  |  +-------+  |  +-------+
+/|  //  ||  \\  |\       |  |      |          |  |          |  |          |
+\|  |\_ || _/|  |/       |  |      |          |  |          |  |          |
+ \\  \_----_/  //        |  |      |  +-------+  |  +-------+  |  +-------+
+  \\   ----   //         |  |      |  |          |  |          |  |
+   \\   ||   //          |  |      |  |          |  |          |  |
+    \\  ||  // _     +---+  +---+  |  +-------+  |  +-------+  |  +-------+
+     \\ || // / \    |          |  |          |  |          |  |          |
+      \\  // | R |   |          |  |          |  |          |  |          |
+       \--/   \_/    +----------+  +----------+  +----------+  +----------+
         \/           
         </pre>
-    </div>
+            <pre id="at">
 
+     /----\     
+    /      \    
+   /        \   
+   |        |   
+   |        |   
+  /   /----  \  
+  |  /    |  |  
+  | |    /   |  
+  | |    |   |  
+  | |    |   |  
+  \  \--/ \--/  
+   |            
+   |            
+   \            
+    \      /    
+     \----/     
+
+</pre>
+            <pre id="ucr">
+  
++--+    +--+     /-------+  |-------\
+|  |    |  |    /        |  |        \
+|  |    |  |   /   /-----+  |  +---   \
+|  |    |  |  |   /         |  |   \   \
+|  |    |  |  |  |          |  |    |  |
+|  |    |  |  |  |          |  |    |  |
+|  |    |  |  |  |          |  |   /   /
+|  |    |  |  |  |          |  +---   /
+|  |    |  |  |  |          |        /
+|   \  /   |  |  |          |  +-\  \
+|   |  |   |  |  |          |  |  \  |
+\    \/    /  |   \         |  |  |  | 
+ |        |   |    \        |  |  |  |
+  \      /     \    -----+  |  |  |  |
+   \    /       \        |  |  |   \  \
+    ----         \-------+  +--+    \__\
+
+</pre>
+        </div>
+    </div>
+    <div style="clear:true;">
+
+        <pre id="text"></pre>
+    </div>
+    <script type="text/javascript">
+        var text = document.getElementById('text');
+
+        var items = [
+            {
+                title: "What is IEEE?",
+                desc:  "We are the Institute of Electrical and Electronics Engineers. We're a group dedicated to professionalism, connections, and our projects."
+            }
+        ]
+
+        var lines = [];
+        for (var index = 0; index < items.length; index++) {
+            let item = items[index];
+            //console.log(item.desc);
+            let line = item.title + ' '.repeat(20 - item.title.length);
+            let margin = ' '.repeat(20);
+            let i = 0;
+            let column = margin.length;
+            while (i < item.desc.length) {
+                let c = item.desc[i];
+                if (c == '\n') {
+                    lines.push(line);
+
+                    line = margin;
+                    column = margin.length;
+                } else {
+                    line += c;
+
+                    console.log(line);
+
+                    column++;
+                    if (column == 100) {
+                        if (c == ' ') {
+                            lines.push(line);
+
+                            line = margin;
+                            column = margin.length;
+                        } else {
+                            let back = 0;
+                            let nextLine = margin;
+                            while (line[i + back] != ' ') {
+                                back--;
+                            }
+                            nextLine += line.substring(column + back, column);
+                            line = line.substring(0, column + back);
+
+                            console.log('line: ' + line);
+                            console.log('next: ' + nextLine);
+
+                            lines.push(line);
+
+                            line = nextLine;
+                            column = nextLine.length;
+                        }
+                    }
+                }
+                i++;
+                
+            }
+            lines.push(line);
+        }
+        for (var line in lines) {
+            console.log(lines[line]);
+        }
+
+        text.innerText = lines.join('\n');
+
+    </script>
 </body>
