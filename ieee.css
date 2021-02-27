@@ -1,0 +1,115 @@
+body {
+    background-color: lightsteelblue;
+    margin-bottom: 128px;
+    margin: 0px 0px 0px 0px;
+}
+
+#logo, #at, #ucr {
+    font: 12px Inconsolata;
+    line-height: 12px;
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+    color: white;
+    float: left;
+}
+
+#logo {
+    margin-left: 24px;
+}
+
+#ucr {
+    color: gold;
+    margin-right: 24px;
+}
+
+#logoMargin {
+    width: 100%;
+    background-color: steelblue;
+    float: left;
+}
+.entry {
+    margin-top: 24px;
+}
+
+    .entry h1 {
+        margin-top: 0px;
+        margin-left: 64px;
+        width: 256px;
+        float: left;
+        font: bold 28px Inconsolata;
+        color: black;
+    }
+
+    .entry p {
+        margin-top: 0px;
+        margin-left: 320px;
+        width: 1024px;
+        font: 28px Inconsolata;
+        color: black;
+    }
+
+.officer {
+    clear:both;
+}
+    .officer p {
+        margin-top: 16px;
+        margin-left: 0px;
+        width: 420px;
+        font: 28px Inconsolata;
+        color: black;
+        float:left;
+    }
+.officer p:first-child {
+    margin-left: 64px;
+    font-weight:bold;
+}
+
+.bar {
+    border-color: navy;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-width: 1px;
+    width: 0px;
+    height: 0px;
+}
+
+#navbar {
+    background-color: lightblue;
+}
+
+    #navbar a {
+        margin-left: 72px;
+        margin-right: 72px;
+        font: 36px Inconsolata;
+        color: black;
+    }
+
+        #navbar a:first-child {
+            margin-left: 64px;
+        }
+
+
+
+
+.title {
+    margin-left:64px;
+    margin-top:16px;
+    margin-bottom:16px;
+    font: bold 36px Inconsolata;
+    color: black;
+}
+.titleBar {
+    border-left: 3px solid black;
+    height: 60px;
+}
+.titleLine {
+    border-top: 3px solid black;
+    width:100%;
+}
+
+
+.calendar {
+    border-width: 0;
+    margin-left: 64px;
+    margin-top: 32px;
+}
