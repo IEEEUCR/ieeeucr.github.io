@@ -3,7 +3,6 @@ body {
     margin-bottom: 128px;
     margin: 0px 0px 0px 0px;
 }
-
 #logo, #at, #ucr {
     font: 12px Inconsolata;
     line-height: 12px;
@@ -12,16 +11,13 @@ body {
     color: white;
     float: left;
 }
-
 #logo {
     margin-left: 24px;
 }
-
 #ucr {
     color: gold;
     margin-right: 24px;
 }
-
 #logoMargin {
     width: 100%;
     background-color: steelblue;
@@ -30,7 +26,6 @@ body {
 .entry {
     margin-top: 24px;
 }
-
     .entry h1 {
         margin-top: 0px;
         margin-left: 64px;
@@ -39,7 +34,6 @@ body {
         font: bold 28px Inconsolata;
         color: black;
     }
-
     .entry p {
         margin-top: 0px;
         margin-left: 320px;
@@ -47,12 +41,14 @@ body {
         font: 28px Inconsolata;
         color: black;
     }
-
 .officer {
     clear:both;
+
+    margin-top:32px;
+    margin-bottom:0px;
 }
     .officer p {
-        margin-top: 16px;
+        margin-top: 0px;
         margin-left: 0px;
         width: 420px;
         font: 28px Inconsolata;
@@ -63,7 +59,6 @@ body {
     margin-left: 64px;
     font-weight:bold;
 }
-
 .bar {
     border-color: navy;
     margin-top: 0px;
@@ -73,23 +68,22 @@ body {
     height: 0px;
 }
 
-#navbar {
+
+
+.navbar {
     background-color: lightblue;
 }
+    .navbar a {
 
-    #navbar a {
         margin-left: 72px;
         margin-right: 72px;
         font: 36px Inconsolata;
         color: black;
     }
 
-        #navbar a:first-child {
+        .navbar a:first-child {
             margin-left: 64px;
         }
-
-
-
 
 .title {
     margin-left:64px;
@@ -106,8 +100,6 @@ body {
     border-top: 3px solid black;
     width:100%;
 }
-
-
 .calendar {
     border-width: 0;
     margin-left: 64px;
