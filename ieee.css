@@ -105,3 +105,9 @@ body {
     margin-left: 64px;
     margin-top: 32px;
 }
+.slides {
+    border-width: 0;
+    margin-left: 64px;
+    height:600px;
+    width:800px;
+}
