@@ -29,15 +29,16 @@ body {
     color: gold;
     margin-right: 24px;
 }
-
-#logoBackground {
-    background-color: steelblue;
-}
 #logoMargin {
     background-color: RGB(30, 80, 150);
     padding-left: 48px;
+    padding-right: 48px;
     float: left;
 }
+#clubBackground {
+    background-color: steelblue;
+}
+
 .entry {
     margin-top: 24px;
 }
