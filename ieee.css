@@ -88,6 +88,8 @@ body {
 
 .navbar {
     background-color: lightblue;
+    padding-top:4px;
+    padding-bottom:4px;
 }
     .navbar a {
 
