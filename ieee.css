@@ -9,7 +9,7 @@ body {
     margin-bottom: 0px;
     font: 64px Inconsolata;
     color: white;
-    text-shadow: 2px 4px 1px black;
+    text-shadow: 2px 2px 1px black;
 }
 #logo, #at, #ucr {
 
@@ -59,12 +59,10 @@ body {
     }
 .officer {
     clear:both;
-
-    margin-top:32px;
-    margin-bottom:0px;
 }
     .officer p {
-        margin-top: 0px;
+        margin-top: 16px;
+        margin-bottom:16px;
         margin-left: 0px;
         width: 420px;
         font: 28px Inconsolata;
