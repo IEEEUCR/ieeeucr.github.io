@@ -71,4 +71,5 @@ s.outerHTML = String.raw`
     <a href="calendar.html">&lt;Calendar&gt;</a>
     <a href="slides.html">&lt;Slides&gt;</a>
     <a href="board.html">&lt;Board&gt;</a>
+    <a href="merit-badge-day.html">&lt;Merit Badge Day&gt;</a>
 </div>`;
