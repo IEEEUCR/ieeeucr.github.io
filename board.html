@@ -8,101 +8,60 @@
     <div class="titleLine"></div>
     <h1 class="title">Board</h1>
     <div class="titleLine"></div>
+    
+    <script type="text/javascript">
+        const officers =
+`Chair,         Michael O'Dea,       mode001@ucr.edu
+Vice Chair,	    Vahagn Tovmasian,	vtovm002@ucr.edu 
+Secretary,	    Ian Oh,	            ioh012@ucr.edu 
+Webmaster,	    Alex Chen,	        achen115@ucr.edu 
+Treasurer,	    Chloe Georgiou,	    cgeor015@ucr.edu 
+Treasurer,		
+Program Chair,	Neo Marin,	        nmari020@ucr.edu 
+Program Chair,	Sunny Zeng,	        szeng020@ucr.edu 
+Professional Development,   Roy Feng,	rfeng016@ucr.edu 
+Professional Development,		
+Robotics Coordinator,	Eric Shu,	    eshu003@ucr.edu 
+Robotics Coordinator,	Dennis Kang,	dkang041@ucr.edu 
+Parts Manager,		
+Parts Manager,		
+Project Manager,	Megan Gorham,	mgorh001@ucr.edu 
+Project Manager,		
+3-D Printer Technician,		
+3-D Printer Technician,		
+Fundraising Chair,		
+Fundraising Chair,		
+Historian,		
+UAS Coordinator,	Kenneth Chew,	kchew007@ucr.edu 
+UAS Coordinator,	Brandon Tabata,	
+Robosub Coordinator,	Wilfredo Teran,	wtera001@ucr.edu 
+Solar Car Coordinator,		
+Solar Car Coordinator,		
+Graduate Advisor,`
 
-    <div class="officer">
-        <p>Chair</p>
-        <p>Angela Maureen Manlangit</p>
-        <p>amanl001@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Vice Chair</p>
-        <p>Jennifer Hunter</p>
-        <p>jhunt013@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Secretary</p>
-        <p>Vahagn Tovmasian</p>
-        <p>vtovm002@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Webmaster</p>
-        <p>Alex Chen</p>
-        <p>achen115@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Treasurer</p>
-        <p>Michael O'Dea</p>
-        <p>mode001@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Program Chair</p>
-        <p>Neo Marin</p>
-        <p>nmari020@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Program Chair</p>
-        <p>Sunny Zeng</p>
-        <p>szeng020@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Professional Development</p>
-        <p>Roy Feng</p>
-        <p>rfeng016@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Robotics Coordinator</p>
-        <p>Jarod Najera</p>
-        <p>jnaje010@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Robotics Coordinator</p>
-        <p>Aditi Behera</p>
-        <p>abehe002@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Parts Manager</p>
-        <p>Catherine Lai</p>
-        <p>clai022@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Project Manager</p>
-        <p>Sunil Alexander</p>
-        <p>salex009@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Fundraising Chair</p>
-        <p>Andrew Nguyen</p>
-        <p>anguy327@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Historian</p>
-        <p>Carlie Huang</p>
-        <p>chuan203@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>UAV Coordinator</p>
-        <p>Brandon Tabata</p>
-        <p>btaba002@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>UAV Coordinator</p>
-        <p>Kenneth Chew</p>
-        <p>kchew007@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Robosub Coordinator</p>
-        <p>Roger Tirtawidjaja</p>
-        <p>rtirt001@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Solar Car Coordinator</p>
-        <p>Brittiney Sempasa</p>
-        <p>bsemp001@ucr.edu</p>
-    </div>
-    <div class="officer">
-        <p>Solar Car Coordinator</p>
-        <p>Sofia Rodriguez</p>
-        <p>srodr148@ucr.edu</p>
-    </div>
+        document.currentScript.outerHTML = officers.split('\n').map(line => {
+            let parts = line.split(',')
+            if(parts.length === 3) {
+                let position = parts[0];
+                let name = parts[1];
+                let email = parts[2];
+                return `
+<div class="officer">
+    <p>${position}</p>
+    <p>${name}</p>
+    <p>${email}</p>
+</div>`
+            } else {
+                let position = parts[0];
+                return `
+<div class="officer">
+    <p>${position}</p>
+    <p>N/A</p>
+</div>`;
+            }
+        }).join(' ');
+        
+    </script>
+    	
 
 </body>
