@@ -1,8 +1,10 @@
 let s = document.currentScript;
 s.outerHTML = String.raw`
 <div id="clubBackground">
-    <div id="logoMargin">
-        <pre id="logo">
+    <div id="logoBackground">
+    
+        <div id="logoMargin">
+            <pre id="logo">
         /\           
        /--\          +----------+  +----------+  +----------+  +----------+
       //  \\         |          |  |          |  |          |  |          |
@@ -41,7 +43,7 @@ s.outerHTML = String.raw`
     \      /    
      \----/     
 </pre>
-        <pre id="ucr">
+            <pre id="ucr">
 
 +--+    +--+     /-------+  |-------\
 |  |    |  |    /        |  |        \
@@ -59,12 +61,12 @@ s.outerHTML = String.raw`
   \      /     \    -----+  |  |  |  |
    \    /       \        |  |  |   \  \
     ----         \-------+  +--+    \__\
-        </pre>
+            </pre>
+        </div>
+        <div style="clear:both; margin:0px 0px 0px 0px;"></div>
     </div>
-    <div style="clear:both; margin:0px 0px 0px 0px;"></div>
     <h1 class="clubName">IEEE@UCR of 2021</h1>
 </div>
-<div class="titleLine" />
 <div class="navbar">
     <a href="index.html">&lt;Home&gt;</a>
     <a href="projects.html">&lt;Projects&gt;</a>

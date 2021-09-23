@@ -7,7 +7,7 @@ body {
     margin-left: 64px;
     margin-top: 0px;
     margin-bottom: 0px;
-    font: 64px Inconsolata;
+    font: 48px Inconsolata;
     color: white;
     text-shadow: 2px 2px 1px black;
 }
@@ -15,8 +15,8 @@ body {
 
     text-shadow: 4px 2px 1px black;
 
-    font: 10px Inconsolata;
-    line-height: 10px;
+    font: 8px Inconsolata;
+    line-height: 8px;
     font-weight: 900;
     font-stretch: ultra-expanded;
     color: white;
@@ -30,10 +30,13 @@ body {
     margin-right: 24px;
 }
 #logoMargin {
-    background-color: RGB(30, 80, 150);
     padding-left: 48px;
     padding-right: 48px;
     float: left;
+}
+
+#logoBackground {
+    background-color: rgb(30, 80, 150);
 }
 #clubBackground {
     background-color: steelblue;
@@ -49,6 +52,12 @@ body {
         float: left;
         font: bold 28px Inconsolata;
         color: black;
+    }
+    .entryTitle h1 {
+        margin-top:0px;
+        margin-left:0px;
+        font: bold 28px Inconsolata;
+
     }
     .entryDesc, .entry p {
         margin-top: 0px;
@@ -91,11 +100,14 @@ body {
 }
     .navbar a {
 
-        margin-left: 48px;
-        margin-right: 48px;
+        margin-left: 32px;
+        margin-right: 32px;
         font: 36px Inconsolata;
         color: black;
         text-decoration: none;
+    }
+    .navbar a:hover {
+        background-color:white;
     }
 
         .navbar a:first-child {
@@ -105,17 +117,16 @@ body {
 .title {
     margin-left:64px;
     margin-top:16px;
-    margin-bottom:16px;
+    padding-bottom:16px;
     font: bold 36px Inconsolata;
     color: black;
 }
-.titleBar {
-    border-left: 3px solid black;
-    height: 60px;
-}
 .titleLine {
-    border-top: 3px solid black;
+    border-top: 0px solid darkblue;
     width:100%;
+}
+.titleBox {
+    background-color: azure;
 }
 .calendar {
     border-width: 0;
