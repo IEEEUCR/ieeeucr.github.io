@@ -68,10 +68,11 @@ s.outerHTML = String.raw`
     <h1 class="clubName">IEEE@UCR of 2021</h1>
 </div>
 <div class="navbar">
-    <a href="index.html">&lt;Home&gt;</a>
-    <a href="projects.html">&lt;Projects&gt;</a>
-    <a href="calendar.html">&lt;Calendar&gt;</a>
-    <a href="slides.html">&lt;Slides&gt;</a>
-    <a href="board.html">&lt;Board&gt;</a>
-    <a href="merit-badge-day.html">&lt;Merit Badge Day&gt;</a>
+    <a href="index.html">[Home]</a>
+    <a href="parts.html">[Parts]</a>
+    <a href="projects.html">[Projects]</a>
+    <a href="calendar.html">[Calendar]</a>
+    <a href="slides.html">[Slides]</a>
+    <a href="board.html">[Board]</a>
+    <a href="merit-badge-day.html">[Merit Badge Day]</a>
 </div>`;
