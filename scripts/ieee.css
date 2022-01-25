@@ -19,6 +19,10 @@ body {
     color: white;
     float: left;
 }
+#logo, #at {
+    
+    color: rgb(165, 252, 255);
+}
 #logo {
     margin-left: 24px;
 }
@@ -67,17 +71,21 @@ body {
     clear:both;
 }
     .officer p {
-        margin-top: 16px;
+        margin-top: 0px;
         margin-bottom:16px;
         margin-left: 0px;
-        width: 420px;
-        font: 28px Inconsolata;
+        margin-right: 0px;
+        width: 320px;
+        font: 32px Inconsolata;
         color: black;
         float:left;
     }
 .officer p:first-child {
+    width: 420px;
     margin-left: 64px;
+    margin-right: 32px;
     font-weight:bold;
+    text-align: right;
 }
 .bar {
     border-color: navy;
@@ -112,7 +120,9 @@ body {
 
 .title {
     margin-left:64px;
-    margin-top:16px;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:16px;
     padding-bottom:16px;
     font: bold 36px Inconsolata;
     color: black;
