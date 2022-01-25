@@ -1,5 +1,5 @@
 body {
-    background-color: lightsteelblue;
+    background-color: rgb(189, 216, 255);
     margin-bottom: 128px;
     margin: 0px 0px 0px 0px;
 }
@@ -9,15 +9,12 @@ body {
     margin-bottom: 0px;
     font: 48px Inconsolata;
     color: white;
-    text-shadow: 2px 2px 1px black;
+    font-weight: 400;
 }
 #logo, #at, #ucr {
-
-    text-shadow: 4px 2px 1px black;
-
     font: 8px Inconsolata;
     line-height: 8px;
-    font-weight: 900;
+    font-weight:1000;
     font-stretch: ultra-expanded;
     color: white;
     float: left;
@@ -26,7 +23,7 @@ body {
     margin-left: 24px;
 }
 #ucr {
-    color: gold;
+    color: rgb(255, 233, 109);
     margin-right: 24px;
 }
 #logoMargin {
@@ -36,10 +33,10 @@ body {
 }
 
 #logoBackground {
-    background-color: rgb(30, 80, 150);
+    background-color: rgb(122, 33, 70);
 }
 #clubBackground {
-    background-color: steelblue;
+    background-color: rgb(214, 10, 105);
 }
 
 .entry {
@@ -94,17 +91,20 @@ body {
 
 
 .navbar {
-    background-color: lightblue;
+    background-color: rgb(189, 216, 255);
     padding-top:4px;
     padding-bottom:4px;
 }
     .navbar a {
 
-        margin-left: 48px;
+        margin-left: 64px;
         margin-right: 0px;
         font: 36px Inconsolata;
         color: black;
         text-decoration: none;
+    }
+    .navbar a:first-child {
+        margin-left:64px;
     }
     .navbar a:hover {
         background-color:white;
